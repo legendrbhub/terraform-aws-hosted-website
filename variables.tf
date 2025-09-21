@@ -1,0 +1,12 @@
+variable "project_name" {}
+variable "region" {}
+variable "cidr" {}
+variable "Pubsub00" {}
+variable "Pubsub02" {}
+variable "Pubsub04" {}
+variable "Prisub01" {}
+variable "Prisub03" {}
+variable "Prisub05" {}
+variable "image_id" {}
+variable "instance_type" {}
+variable "key_name" {}

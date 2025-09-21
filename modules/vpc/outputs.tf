@@ -1,0 +1,29 @@
+output "vpc" {
+    value = {
+    Region = aws_vpc.vpc.region
+    VPCId = aws_vpc.vpc.id
+    Pubsub00id = aws_subnet.my-pub-subnet00.id
+    Pubsub02id = aws_subnet.my-pub-subnet02.id
+    Pubsub04id = aws_subnet.my-pub-subnet04.id
+    Prisub01id = aws_subnet.my-pri-subnet01.id
+    Prisub03id = aws_subnet.my-pri-subnet03.id
+    Prisub05id = aws_subnet.my-pri-subnet05.id
+    Pubsub00 = aws_subnet.my-pub-subnet00.cidr_block
+    Pubsub02 = aws_subnet.my-pub-subnet02.cidr_block
+    Pubsub04 = aws_subnet.my-pub-subnet04.cidr_block
+    Prisub01 = aws_subnet.my-pri-subnet01.cidr_block
+    Prisub03 = aws_subnet.my-pri-subnet03.cidr_block
+    Prisub05 = aws_subnet.my-pri-subnet05.cidr_block
+    IGWId = aws_internet_gateway.igw.id
+    NATeip00 = aws_eip.nat-eip-00.public_ip
+    NATeip02 = aws_eip.nat-eip-02.public_ip
+    NATeip04 = aws_eip.nat-eip-04.public_ip
+    NATGW00 = aws_nat_gateway.natgw00.id
+    NATGW02 = aws_nat_gateway.natgw02.id
+    NATGW04 = aws_nat_gateway.natgw04.id
+    PUBRoutetableid = aws_route_table.pub-routetable-00.id
+    PRIRoutetableid01 = aws_route_table.pri-routetable-01.id
+    PRIRoutetableid03 = aws_route_table.pri-routetable-03.id
+    PRIRoutetableid05 = aws_route_table.pri-routetable-05.id
+    }
+}
